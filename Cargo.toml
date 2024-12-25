@@ -1,0 +1,33 @@
+[package]
+name = "km-crates-publish-test"
+# don't change this, it's updated before an actual build by update-version.sh
+version = "0.0.0-development"
+edition = "2021"
+rust-version = "1.83.0"
+authors = ["Kristof Mattei"]
+description = "test"
+license = "MIT OR Apache-2.0"
+categories = ["development-tools"]
+keywords = ["test", "reverse"]
+repository = "https://github.com/kristof-mattei/km-crates-publish-test"
+
+[lints.clippy]
+# don't stop from compiling / running
+all = "warn"
+pedantic = "warn"
+cargo = "warn"
+# this one causes confusion when combining variables (`foo`) and
+# dereferenced variables (`foo.bar`). The latter cannot be inlined
+# so we don't inline anything
+uninlined-format-args = { level = "allow", priority = 127 }
+
+[lints.rust]
+let_underscore_drop = { level = "deny", priority = 127 }
+non_ascii_idents = { level = "deny", priority = 127 }
+
+[features]
+coverage = []
+
+[dependencies]
+
+[dev-dependencies]
