@@ -1,3 +1,11 @@
+## [v1.7.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.6.0..v1.7.0) - 2024-12-26
+#### Features
+- restore changelog - ([85fa344](https://github.com/kristof-mattei/km-crates-publish-test/commit/85fa34460543832b3db05668fab38347bdb878e3)) - Kristof Mattei
+#### Miscellaneous Chores
+- **(version)** v1.7.0 - ([9e72888](https://github.com/kristof-mattei/km-crates-publish-test/commit/9e72888e488f9ceb6948344d5589ce65049945d5)) - Kristof Mattei
+
+- - -
+
 ## [v1.6.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.5.0..v1.6.0) - 2024-12-26
 #### Features
 - release magic II - ([21e4a92](https://github.com/kristof-mattei/km-crates-publish-test/commit/21e4a9258464b679d9b7352fd86ed86b4fce590c)) - Kristof Mattei
@@ -6,12 +14,6 @@
 - **(version)** v1.6.0 - ([7b490ac](https://github.com/kristof-mattei/km-crates-publish-test/commit/7b490acb5f41fd7bdcc034b5d6820c8fdf3568d0)) - Kristof Mattei
 
 - - -
-## [v1.7.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/85fa34460543832b3db05668fab38347bdb878e3..v1.7.0) - 2024-12-26
-#### Features
-- restore changelog - ([85fa344](https://github.com/kristof-mattei/km-crates-publish-test/commit/85fa34460543832b3db05668fab38347bdb878e3)) - Kristof Mattei
-
-- - -
-
 
 ## [v1.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.4.0..v1.5.0) - 2024-12-26
 #### Features
