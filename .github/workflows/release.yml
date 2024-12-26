@@ -52,7 +52,7 @@ jobs:
 
       - name: Cocogitto release
         id: release
-        uses: cocogitto/cocogitto-action@v3
+        uses: cocogitto/cocogitto-action@f1d28f8e65281597d8209bf233328ddfd4424d10 # v3
         with:
           release: true
           git-user: "Release bot"
