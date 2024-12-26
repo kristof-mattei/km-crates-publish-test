@@ -1,9 +1,7 @@
 ignore_merge_commits = true
 tag_prefix = "v"
 
-pre_bump_hooks = [
-  "sh -c \"echo '{{version}}' > NEXTVERSION\"",
-]
+pre_bump_hooks = []
 post_bump_hooks = []
 
 [commit_types]
@@ -11,5 +9,9 @@ post_bump_hooks = []
 [changelog]
 path = "CHANGELOG.md"
 authors = []
+template = "remote"
+remote = "github.com"
+repository = "km-crates-publish-test"
+owner = "kristof-mattei"
 
 [bump_profiles]
