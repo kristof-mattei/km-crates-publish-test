@@ -3,6 +3,12 @@
 - feat - ([fbbe8b0](https://github.com/kristof-mattei/km-crates-publish-test/commit/fbbe8b0054efcccaec52ad419cce9fe767b4afa6)) - Kristof Mattei
 
 - - -
+## [v1.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/b3f0ad1bc8cc5a03c3c40ec6ebfb6d7805fb2f03..v1.5.0) - 2024-12-26
+#### Features
+- after v1.4.0 - ([b3f0ad1](https://github.com/kristof-mattei/km-crates-publish-test/commit/b3f0ad1bc8cc5a03c3c40ec6ebfb6d7805fb2f03)) - Kristof Mattei
+
+- - -
+
 
 ## [v1.2.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.1.0..v1.2.0) - 2024-12-26
 #### Features
