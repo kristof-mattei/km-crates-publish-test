@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v1.3.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/c431343196d25243b0054e25dc1b7fc6849be821..v1.3.0) - 2024-12-26
+#### Features
+- some new features - ([c431343](https://github.com/kristof-mattei/km-crates-publish-test/commit/c431343196d25243b0054e25dc1b7fc6849be821)) - Release-bot
+
+- - -
+
 ## [v1.2.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.0.1..v1.2.0) - 2024-12-26
 #### Features
 - set depth - ([84e6553](https://github.com/kristof-mattei/km-crates-publish-test/commit/84e655349798d2104e7d4689ccce40e9daaeffa4)) - Release-bot
