@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.0.1](https://github.com/kristof-mattei/km-crates-publish-test/compare/556a1274fd094a132c6069119fd43005b9f74ec9..v0.0.1) - 2024-12-26
+#### Bug Fixes
+- username & email - ([556a127](https://github.com/kristof-mattei/km-crates-publish-test/commit/556a1274fd094a132c6069119fd43005b9f74ec9)) - Release-bot
+
+- - -
+
 ## [v0.1.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/04cbe24abcecd736b9c6a3087da2e0f7424debb4..v0.1.0) - 2024-12-26
 #### Features
 - cog.sh - ([d19cfcc](https://github.com/kristof-mattei/km-crates-publish-test/commit/d19cfcc0ffc90946df3cc53aeb5d1f3304d1764c)) - Release-bot
