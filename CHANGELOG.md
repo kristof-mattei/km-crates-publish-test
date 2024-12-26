@@ -5,6 +5,12 @@
 - **(version)** v1.7.0 - ([9e72888](https://github.com/kristof-mattei/km-crates-publish-test/commit/9e72888e488f9ceb6948344d5589ce65049945d5)) - Kristof Mattei
 
 - - -
+## [v1.9.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/04958bed785718637a4c206a4b9a5db40dd86203..v1.9.0) - 2024-12-26
+#### Features
+- 1.8 test - ([04958be](https://github.com/kristof-mattei/km-crates-publish-test/commit/04958bed785718637a4c206a4b9a5db40dd86203)) - Kristof Mattei
+
+- - -
+
 ## [v1.8.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/d98b1fe266ac8d1dff5a39139a23e9cf9fb4ddbe..v1.8.0) - 2024-12-26
 #### Features
 - restore changelog II - ([d98b1fe](https://github.com/kristof-mattei/km-crates-publish-test/commit/d98b1fe266ac8d1dff5a39139a23e9cf9fb4ddbe)) - Kristof Mattei
