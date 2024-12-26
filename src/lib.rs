@@ -4,6 +4,12 @@ pub fn reverse(input: impl Into<String>) -> String {
     s.chars().rev().collect::<String>()
 }
 
+pub fn reverse2(input: impl Into<String>) -> String {
+    let s: String = input.into();
+
+    s.chars().rev().collect::<String>()
+}
+
 #[cfg(test)]
 mod tests {
     use crate::reverse;
