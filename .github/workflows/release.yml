@@ -38,6 +38,18 @@ jobs:
           show-progress: false
           token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
 
+      - name: Setup Node.js
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+          cache-dependency-path: "**/package-lock.json"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          npm ci --ignore-scripts
+
       - name: Cocogitto release
         id: release
         uses: cocogitto/cocogitto-action@v3
