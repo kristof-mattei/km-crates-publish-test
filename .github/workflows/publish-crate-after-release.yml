@@ -95,8 +95,9 @@ jobs:
         shell: bash
         id: version
         run: |
+          VERSION="${{ github.ref_name }}"
           # remove v
-          VERSION="${${{ github.ref_name }}//v/}"
+          VERSION="${VERSION//v/}"
 
           # store
           cargo set-version ${VERSION}
