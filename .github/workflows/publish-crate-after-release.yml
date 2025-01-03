@@ -86,10 +86,10 @@ jobs:
 
           mv ./cargo-binstall ~/.cargo/bin/
 
-      #   - name: Install cocogitto to get the next version number
-      #     shell: bash
-      #     run: |
-      #       cargo binstall --no-confirm cocogitto --target x86_64-unknown-linux-musl --pkg-url "{ repo }/releases/download/{ version }/{ name }-{ version }-{ target }.tar.gz" --bin-dir "{ bin }" --pkg-fmt tgz
+      - name: Install binstall to do set-version
+        shell: bash
+        run: |
+          cargo binstall cargo-edit
 
       - name: Calculate next version
         shell: bash
