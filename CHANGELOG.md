@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v1.4.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/99cfacea7a95cd913057bc51779ada0f6558ed79..v1.4.0) - 2025-01-03
+#### Features
+- some new features Friday - ([3c8919a](https://github.com/kristof-mattei/km-crates-publish-test/commit/3c8919ac61236f9c9469a350bdc44fe21085b9e5)) - Kristof Mattei
+#### Miscellaneous Chores
+- **(deps)** lock file maintenance - ([99cface](https://github.com/kristof-mattei/km-crates-publish-test/commit/99cfacea7a95cd913057bc51779ada0f6558ed79)) - renovate[bot]
+
+- - -
+
 ## [v1.3.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/c431343196d25243b0054e25dc1b7fc6849be821..v1.3.0) - 2024-12-26
 #### Features
 - some new features - ([c431343](https://github.com/kristof-mattei/km-crates-publish-test/commit/c431343196d25243b0054e25dc1b7fc6849be821)) - Release-bot
