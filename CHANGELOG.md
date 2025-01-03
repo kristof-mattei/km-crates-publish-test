@@ -6,6 +6,17 @@ All notable changes to this project will be documented in this file. See [conven
 #### Bug Fixes
 - consitency - ([77360d7](https://github.com/kristof-mattei/km-crates-publish-test/commit/77360d7526d85d75f82094e76abee49bb2bae6be)) - Kristof Mattei
 #### Features
+- try to publish without semantic release - ([be75da8](https://github.com/kristof-mattei/km-crates-publish-test/commit/be75da8bbac7f1fe520f1fddf43a6c42be28a70f)) - Kristof Mattei
+- some new features Friday 2 - ([ca4611d](https://github.com/kristof-mattei/km-crates-publish-test/commit/ca4611dcf68ce94c7c09b32a227b558608a2920a)) - Kristof Mattei
+#### Miscellaneous Chores
+- **(version)** v1.5.0 - ([81a6d96](https://github.com/kristof-mattei/km-crates-publish-test/commit/81a6d96f089105a63d9722108b74a405d969371a)) - Kristof Mattei
+
+- - -
+
+## [v1.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/77360d7526d85d75f82094e76abee49bb2bae6be..v1.5.0) - 2025-01-03
+#### Bug Fixes
+- consitency - ([77360d7](https://github.com/kristof-mattei/km-crates-publish-test/commit/77360d7526d85d75f82094e76abee49bb2bae6be)) - Kristof Mattei
+#### Features
 - some new features Friday 2 - ([ca4611d](https://github.com/kristof-mattei/km-crates-publish-test/commit/ca4611dcf68ce94c7c09b32a227b558608a2920a)) - Kristof Mattei
 
 - - -
