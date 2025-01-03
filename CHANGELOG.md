@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v1.6.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/c9306e73058a8617458f127accdbf7a242e0be54..v1.6.0) - 2025-01-03
+#### Features
+- token to trigger publish - ([c9306e7](https://github.com/kristof-mattei/km-crates-publish-test/commit/c9306e73058a8617458f127accdbf7a242e0be54)) - Kristof Mattei
+
+- - -
+
 ## [v1.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/77360d7526d85d75f82094e76abee49bb2bae6be..v1.5.0) - 2025-01-03
 #### Bug Fixes
 - consitency - ([77360d7](https://github.com/kristof-mattei/km-crates-publish-test/commit/77360d7526d85d75f82094e76abee49bb2bae6be)) - Kristof Mattei
