@@ -87,7 +87,6 @@ jobs:
           VERSION="v$(cog -v get-version)"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-
           cog changelog --at ${VERSION} > GITHUB_CHANGELOG.md
 
           echo "New version: ${VERSION}"
