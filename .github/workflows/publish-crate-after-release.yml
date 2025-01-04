@@ -91,7 +91,7 @@ jobs:
         run: |
           cargo binstall cargo-edit
 
-      - name: Calculate next version
+      - name: Set version in Cargo.toml / Cargo.lock
         shell: bash
         id: version
         run: |
@@ -107,5 +107,7 @@ jobs:
 
       - name: Publish
         shell: bash
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
         run: |
-          echo "NOT YET"
+          cargo publish
