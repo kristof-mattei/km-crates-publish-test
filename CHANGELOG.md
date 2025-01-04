@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v1.8.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/b69b789be000b9cd7f2ebf2f2b4a6829b6d57685..v1.8.0) - 2025-01-04
+#### Features
+- install cargo-edit - ([b69b789](https://github.com/kristof-mattei/km-crates-publish-test/commit/b69b789be000b9cd7f2ebf2f2b4a6829b6d57685)) - Kristof Mattei
+
+- - -
+
 ## [v1.7.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/15b02c6c28ed70f906770efe8a9ac3197fc8f742..v1.7.0) - 2025-01-03
 #### Features
 - set correct versoin - ([15b02c6](https://github.com/kristof-mattei/km-crates-publish-test/commit/15b02c6c28ed70f906770efe8a9ac3197fc8f742)) - Kristof Mattei
