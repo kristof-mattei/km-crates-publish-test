@@ -1,3 +1,3 @@
 # km-crates-publish-test
 
-TEST
+Repo to test publishing crates
