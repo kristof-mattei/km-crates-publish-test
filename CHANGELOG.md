@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v1.11.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/406e06cae013094a6e2995e2c49158b1677b814e..v1.11.0) - 2025-07-11
+#### Features
+- update publish defaults - ([406e06c](https://github.com/kristof-mattei/km-crates-publish-test/commit/406e06cae013094a6e2995e2c49158b1677b814e)) - [@kristof-mattei](https://github.com/kristof-mattei)
+
+- - -
+
 ## [v1.10.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/7af0684c86b197699123cc67d0d87ec66fbd1e2e..v1.10.0) - 2025-07-11
 #### Bug Fixes
 - **(deps)** update rust crate color-eyre to 0.6.5 - ([6cbb98d](https://github.com/kristof-mattei/km-crates-publish-test/commit/6cbb98dc877f5d2785ceb938f3fca30172c21bbe)) - renovate[bot]
