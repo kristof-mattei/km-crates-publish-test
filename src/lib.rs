@@ -1,12 +1,12 @@
 use std::borrow::Cow;
 
-pub fn reverse(input: impl Into<String>) -> String {
+pub fn reverse<I: Into<String>>(input: I) -> String {
     let s: String = input.into();
 
     s.chars().rev().collect::<String>()
 }
 
-pub fn reverse2(input: impl Into<String>) -> String {
+pub fn reverse2<I: Into<String>>(input: I) -> String {
     let s: String = input.into();
 
     s.chars().rev().collect::<String>()
@@ -19,8 +19,7 @@ pub fn to_bytes(input: Cow<'_, str>) -> Vec<u8> {
 
 #[cfg(test)]
 mod tests {
-    use crate::reverse;
-    use crate::to_bytes;
+    use crate::{reverse, to_bytes};
 
     #[test]
     fn it_works() {
