@@ -47,6 +47,7 @@
 - Set sha for pnpm
 - Admin can bypass
 - Image as well because renovate is slow
+- New changelog
 
 ### ⚙️ Miscellaneous Tasks
 

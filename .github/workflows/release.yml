@@ -98,28 +98,9 @@ jobs:
         run: |
           cargo binstall --github-token ${{ secrets.GITHUB_TOKEN }} --no-confirm cocogitto --pkg-url "{ repo }/releases/download/{ version }/{ name }-{ version }-{ target }.tar.gz" --bin-dir "{ target }/{ bin }{ binary-ext }" --target x86_64-unknown-linux-musl --pkg-fmt tgz --bin cog --strategies crate-meta-data
 
-      - name: Bump
-        shell: bash
-        id: release
-        run: |
-          git config --global user.name github-actions
-          git config --global user.email github-actions@github.com
-
-          cog bump --auto
-
-          version="v$(cog -v get-version)"
-          echo "version=$version" >> ${GITHUB_OUTPUT}
-
-          git push
-
-      - name: Generate Changelog
-        shell: bash
-        run: |
-          cog changelog --at ${{ steps.release.outputs.version }} > GITHUB_CHANGELOG.md
-
-      - name: Upload github release
-        uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
+      - name: Run release-plz
+        uses: release-plz/action@v0.5
         with:
-          body_path: GITHUB_CHANGELOG.md
-          tag_name: ${{ steps.release.outputs.version }}
-          token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
+          command: release-pr
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
