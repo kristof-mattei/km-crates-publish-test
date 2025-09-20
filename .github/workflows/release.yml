@@ -53,7 +53,7 @@ jobs:
             ~/.cargo/registry/index/
             ~/.cargo/registry/cache/
             ~/.cargo/git/db/
-          key: ${{ runner.os }}-${{ runner.arch }}-build-${{ env.CACHE_NAME }}-${{ hashFiles('Cargo.lock') }}-cocogitto
+          key: ${{ runner.os }}-${{ runner.arch }}-build-${{ env.CACHE_NAME }}-${{ hashFiles('Cargo.lock') }}-git-cliff
           restore-keys: |
             ${{ runner.os }}-${{ runner.arch }}-build-${{ env.CACHE_NAME }}-${{ hashFiles('Cargo.lock') }}-
             ${{ runner.os }}-${{ runner.arch }}-build-${{ env.CACHE_NAME }}-
@@ -93,14 +93,39 @@ jobs:
                 --gunzip \
                 --file=-
 
-      - name: Install cocogitto to get the next version number
+      - name: Install git-cliff to generate changelog & next version number
         shell: bash
         run: |
-          cargo binstall --github-token ${{ secrets.GITHUB_TOKEN }} --no-confirm cocogitto --pkg-url "{ repo }/releases/download/{ version }/{ name }-{ version }-{ target }.tar.gz" --bin-dir "{ target }/{ bin }{ binary-ext }" --target x86_64-unknown-linux-musl --pkg-fmt tgz --bin cog --strategies crate-meta-data
+          cargo binstall --github-token ${{ secrets.GITHUB_TOKEN }} --no-confirm git-cliff
 
-      - name: Run release-plz
-        uses: release-plz/action@acb9246af4d59a270d1d4058a8b9af8c3f3a2559 # v0.5.117
+      - name: Bump
+        shell: bash
+        id: release
+        run: |
+          repository=${{ github.repository }}
+          # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
+          repository=${repository##*/}
+
+          git config --global user.name ${application_name}-release-bot
+          git config --global user.email 864376+Kristof-Mattei@users.noreply.github.com
+
+          version=$(git-cliff --bumped-version)
+          echo "version=$version" >> ${GITHUB_OUTPUT}
+
+          git-cliff --output CHANGELOG.md --bump
+
+          git tag $version
+
+          git push
+
+      - name: Generate Changelog
+        shell: bash
+        run: |
+          git-cliff --output diff-CHANGELOG.md --current
+
+      - name: Upload github release
+        uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
         with:
-          command: release-pr
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
+          body_path: diff-CHANGELOG.md
+          tag_name: ${{ steps.release.outputs.version }}
+          token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
