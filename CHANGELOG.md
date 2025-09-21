@@ -9,6 +9,21 @@
 - This is a feat 3 - ([4786a7f](https://github.com/kristof-mattei/km-crates-publish-test/commit/4786a7f72697eefa7a7291676301b6e14b10ea8c))
 - This is a feat 4 - ([a1e9614](https://github.com/kristof-mattei/km-crates-publish-test/commit/a1e9614d71f9be87990bd0121fef577370508b1c))
 - This is a feat 5 - ([a83c7fe](https://github.com/kristof-mattei/km-crates-publish-test/commit/a83c7fe517c37a3e3ce934694bbe2a1d15100d41))
+- This is a feat 1 - ([9f700a1](https://github.com/kristof-mattei/km-crates-publish-test/commit/9f700a13edb80a1ac5ad4d8b58a56ec891dd8b57))
+- This is a feat 2 - ([b7e8c49](https://github.com/kristof-mattei/km-crates-publish-test/commit/b7e8c49038a536d64e0e210b5421257e23768d03))
+- This is a feat 3 - ([111e2a7](https://github.com/kristof-mattei/km-crates-publish-test/commit/111e2a78615967e6d56807035dc1bdc8257d3469))
+- This is a feat 4 - ([e404d61](https://github.com/kristof-mattei/km-crates-publish-test/commit/e404d615e4e71951a0e4dded19e90f40b0aa0fa0))
+- This is a feat 5 - ([630c614](https://github.com/kristof-mattei/km-crates-publish-test/commit/630c61441757d20d5d08aa06d052a607094ed02e))
+- Generate diff correctly - ([0034d37](https://github.com/kristof-mattei/km-crates-publish-test/commit/0034d37c6a41da5dcba6b935e10dd3009ebee933))
+- Generate diff correctly II - ([00eb3ba](https://github.com/kristof-mattei/km-crates-publish-test/commit/00eb3ba72604f09f3badb95a05849fd4d1c0e6cf))
+
+### 🐛 Bug Fixes
+
+- Fmt - ([fe0067b](https://github.com/kristof-mattei/km-crates-publish-test/commit/fe0067b5e1a93232d49f28dea6dee9a5d4f1af93))
+
+### ⚙️ Miscellaneous Tasks
+
+- Release v1.20.0 - ([75add92](https://github.com/kristof-mattei/km-crates-publish-test/commit/75add927ff7ab930986458c2dd21d61df9e67120))
 ## [1.19.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.18.0..v1.19.0) - 2025-09-21
 
 ### 🚀 Features
