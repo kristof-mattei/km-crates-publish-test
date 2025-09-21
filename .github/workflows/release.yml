@@ -106,8 +106,8 @@ jobs:
           # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
           repository=${repository##*/}
 
-          git config --global user.name ${application_name}-release-bot
-          git config --global user.email 864376+Kristof-Mattei@users.noreply.github.com
+          git config --global user.name ${application_name}-release[bot]
+          git config --global user.email 864376+${application_name}-release[bot]@users.noreply.github.com
 
           version=$(git-cliff --bumped-version)
           echo "version=$version" >> ${GITHUB_OUTPUT}
