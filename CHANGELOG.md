@@ -1,5 +1,30 @@
 <!-- header goes here -->
-## [1.12.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.11.0..v1.12.0) - 2025-09-20
+## [1.15.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.14.0..v1.15.0) - 2025-09-21
+
+### 🚀 Features
+
+- Push actual changelog and then release - ([815f1b4](https://github.com/kristof-mattei/km-crates-publish-test/commit/815f1b4f2b6a7c1387bf2690469af313c58b8a1d))
+- Ensure we correctly generate the changelog for just the current version - ([5112f0b](https://github.com/kristof-mattei/km-crates-publish-test/commit/5112f0b9fe1cbe601c96768f5531c7169828d3e8))
+- Sane tag pushing - ([3eb3587](https://github.com/kristof-mattei/km-crates-publish-test/commit/3eb35873ccbee914e66ab2147f33b8f6a718efb2))
+- Feat - ([d2345bd](https://github.com/kristof-mattei/km-crates-publish-test/commit/d2345bd8de27c03d92fbfa6dacad4376517cd407))
+- Feat - ([8332dff](https://github.com/kristof-mattei/km-crates-publish-test/commit/8332dffb235f287feda37bdb675b5ed809d93634))
+- This is a feat - ([24edd1c](https://github.com/kristof-mattei/km-crates-publish-test/commit/24edd1c17a6650c85e180bc191a0bc5ea0cfaed8))
+## [1.14.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.13.1..v1.14.0) - 2025-09-21
+
+### 🚀 Features
+
+- More token - ([5122857](https://github.com/kristof-mattei/km-crates-publish-test/commit/51228575b3be352f2d5b0eda23aaf318d47074b2))
+## [1.13.1](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.13.0..v1.13.1) - 2025-09-21
+
+### 🐛 Bug Fixes
+
+- Add token - ([a746b21](https://github.com/kristof-mattei/km-crates-publish-test/commit/a746b213e05180f12a3af490165dbd8dcd8f0378))
+## [1.13.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.12.0..v1.13.0) - 2025-09-21
+
+### 🚀 Features
+
+- Remove first-time contrib - ([bcf760d](https://github.com/kristof-mattei/km-crates-publish-test/commit/bcf760d67e20adb6cc59e0da4a57e890dabd0b13))
+## [1.12.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.11.0..v1.12.0) - 2025-09-21
 
 ### 🚀 Features
 
@@ -13,6 +38,7 @@
 - Write output to per-target folder, otherwise caches overwrite each other causing recompilation in the install step - ([aabbed1](https://github.com/kristof-mattei/km-crates-publish-test/commit/aabbed1fd86be610b46a911d2d1cf7231b0ec5ac))
 - Release stuff - ([f771693](https://github.com/kristof-mattei/km-crates-publish-test/commit/f771693e36143710f46601576179c9d2a6bb7072))
 - My first feat - ([077fbf0](https://github.com/kristof-mattei/km-crates-publish-test/commit/077fbf04039829af476c8a2fc7a729a7ceb92f64))
+- New identity - ([345218d](https://github.com/kristof-mattei/km-crates-publish-test/commit/345218d8d5e64df5cbda0d2a647bdd5d0e1e2622))
 
 ### 🐛 Bug Fixes
 
@@ -53,6 +79,7 @@
 - New changelog - ([aab8ff7](https://github.com/kristof-mattei/km-crates-publish-test/commit/aab8ff7b1ecbb8eedcd5309a04a2a21a813a789a))
 - Fmt - ([e3a2652](https://github.com/kristof-mattei/km-crates-publish-test/commit/e3a26525781f84128e347d6005194ab29ededc45))
 - Latest - ([b931ed7](https://github.com/kristof-mattei/km-crates-publish-test/commit/b931ed70608a893d76e1462877f2ac7c43559229))
+- Format - ([9d547cd](https://github.com/kristof-mattei/km-crates-publish-test/commit/9d547cd946fc553c4fbe58e17faa7f2fc4d57e59))
 
 ### ⚙️ Miscellaneous Tasks
 
@@ -75,7 +102,7 @@
 - Remove submodule folder - ([f6e5d3a](https://github.com/kristof-mattei/km-crates-publish-test/commit/f6e5d3a28c8efe2dcae9575945860a54e710d410))
 - Sort - ([c757c8d](https://github.com/kristof-mattei/km-crates-publish-test/commit/c757c8de56467f6c8f45b8825684605c4435da47))
 - Typo - ([cded012](https://github.com/kristof-mattei/km-crates-publish-test/commit/cded012f14f816d0e1878e4abf0225bbc22b5925))
-- Release stuff - ([5248852](https://github.com/kristof-mattei/km-crates-publish-test/commit/52488526dda3ea6dd85fc9e562ab7b59508d3463))
+- Release stuff - ([46b057a](https://github.com/kristof-mattei/km-crates-publish-test/commit/46b057abe1bf12f283fd4af067891e9356cddbb5))
 ## [1.11.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.10.0..v1.11.0) - 2025-07-11
 
 ### ⚙️ Miscellaneous Tasks
@@ -579,11 +606,7 @@
 - Fix output - ([39aecb7](https://github.com/kristof-mattei/km-crates-publish-test/commit/39aecb7f88547541cb73a0daea054cba7bafc37f))
 - Group variables in single step - ([793b007](https://github.com/kristof-mattei/km-crates-publish-test/commit/793b0079596c261547767c8e939b31d12345e336))
 - Set revision explicitely - ([1ca21b9](https://github.com/kristof-mattei/km-crates-publish-test/commit/1ca21b9c350223869f42f51e85cf6311b2ca7307))
-
-## New Contributors ❤️
-
-* @github-actions[bot] made their first contribution
-* @dependabot[bot] made their first contribution## [0.1.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.9.0..v0.1.0) - 2021-10-30
+## [0.1.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.9.0..v0.1.0) - 2021-10-30
 
 ### 🚀 Features
 
@@ -615,11 +638,7 @@
 ### ⚙️ Miscellaneous Tasks
 
 - Copy tags with docker tags again - ([8ffcf1e](https://github.com/kristof-mattei/km-crates-publish-test/commit/8ffcf1ed1de7a080abcea97328b049bf909a1dba))
-
-## New Contributors ❤️
-
-* @renovate[bot] made their first contribution in [#47](https://github.com/kristof-mattei/km-crates-publish-test/pull/47)
-* @kristof-mattei made their first contribution## [1.9.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.8.0..v1.9.0) - 2025-01-04
+## [1.9.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.8.0..v1.9.0) - 2025-01-04
 
 ### ⚙️ Miscellaneous Tasks
 
@@ -730,11 +749,7 @@
 - *(version)* V0.1.0 - ([d972f64](https://github.com/kristof-mattei/km-crates-publish-test/commit/d972f647510d2973874a5ea1052c7f389ee06f7a))
 - *(version)* V0.1.0 - ([7152d9d](https://github.com/kristof-mattei/km-crates-publish-test/commit/7152d9d46f541b5e145a5efee8bbbb54d89fa470))
 - *(version)* V0.0.1 - ([0b53fb0](https://github.com/kristof-mattei/km-crates-publish-test/commit/0b53fb0c7784dfe012f4275ecec19043d96b0fbc))
-
-## New Contributors ❤️
-
-* @ made their first contribution
-* @invalid-email-address made their first contribution## [1.1.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.0.0..v1.1.0) - 2024-12-26
+## [1.1.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.0.0..v1.1.0) - 2024-12-26
 
 ### 🚀 Features
 
