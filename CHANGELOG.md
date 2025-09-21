@@ -1,4 +1,23 @@
 <!-- header goes here -->
+## [1.30.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.29.0..v1.30.0) - 2025-09-21
+
+### 🚀 Features
+
+- Order - ([708ba93](https://github.com/kristof-mattei/km-crates-publish-test/commit/708ba93bbf47da3525710bc592c74edcd57db989))
+- This is a feat 1 - ([ecb6b0d](https://github.com/kristof-mattei/km-crates-publish-test/commit/ecb6b0d4dfe98a81d2138a85cf1ee1d9814142fd))
+- This is a feat 2 - ([6f1744f](https://github.com/kristof-mattei/km-crates-publish-test/commit/6f1744fc442012610d539c91b1f8d0340a65909d))
+- This is a feat 3 - ([1394237](https://github.com/kristof-mattei/km-crates-publish-test/commit/13942378534ebfff5ca24246f032acf7b98c1ba3))
+- This is a feat 4 - ([52fd5be](https://github.com/kristof-mattei/km-crates-publish-test/commit/52fd5be408039fb74e5a4c160b02d3d2e6db4cf7))
+- This is a feat 5 - ([e484d6c](https://github.com/kristof-mattei/km-crates-publish-test/commit/e484d6c33fb6c4ae813ca82333073408eb16baeb))
+- This is a feat 6 - ([6b1388e](https://github.com/kristof-mattei/km-crates-publish-test/commit/6b1388e7a788040de383e4832387c7732bb0343f))
+- This is a feat 7 - ([16843de](https://github.com/kristof-mattei/km-crates-publish-test/commit/16843de4e438c8ad7fbd80d8883fb3845d8b577a))
+- This is a feat 8 - ([e781f44](https://github.com/kristof-mattei/km-crates-publish-test/commit/e781f449587dc11c3601f0b6918b81ac3bb3973e))
+- This is a feat 9 - ([e684971](https://github.com/kristof-mattei/km-crates-publish-test/commit/e6849714f18dc4e2637d31c1e90865e79e8c961b))
+- This is a feat 10 - ([69667a3](https://github.com/kristof-mattei/km-crates-publish-test/commit/69667a34ddc39d41651dcdca2ff99ac27779b6c5))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(version)* Update changelog for v1.29.0 - ([95016f0](https://github.com/kristof-mattei/km-crates-publish-test/commit/95016f02ede2e20db7b88736333051e6a17cd1f1))
 ## [1.29.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.28.0..v1.29.0) - 2025-09-21
 
 ### 🚀 Features
