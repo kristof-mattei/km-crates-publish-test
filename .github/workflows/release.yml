@@ -112,7 +112,7 @@ jobs:
           version=$(git-cliff --bumped-version)
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
-          git-cliff --output CHANGELOG.md --bump
+          git-cliff --output CHANGELOG.md --bump --github-token ${{ secrets.GITHUB_TOKEN }}
 
           git tag $version
 
@@ -121,7 +121,7 @@ jobs:
       - name: Generate Changelog
         shell: bash
         run: |
-          git-cliff --output diff-CHANGELOG.md --current
+          git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload github release
         uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
