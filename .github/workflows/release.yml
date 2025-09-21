@@ -112,7 +112,7 @@ jobs:
           version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
-          git tag $version --message "chore(version): Release ${version}
+          git tag $version --message "chore(version): Release ${version}"
 
           git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
