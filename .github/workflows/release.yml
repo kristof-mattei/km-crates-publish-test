@@ -120,7 +120,7 @@ jobs:
 
           git tag $version
 
-          git push --tags
+          git push --follow-tags
 
       - name: Get changelog for v-last to v-current
         shell: bash
