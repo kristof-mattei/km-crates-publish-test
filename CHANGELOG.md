@@ -1,4 +1,13 @@
 <!-- header goes here -->
+## [0.8.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.7.0..v0.8.0) - 2025-09-21
+
+### 🚀 Features
+
+- Diff is generated after the tag, so we don't need to add the as-if message - ([ff626f7](https://github.com/kristof-mattei/km-crates-publish-test/commit/ff626f76ec98220ea845ed4278a1d123ca5ce819))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(release)* Release v0.8.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
 ## [0.7.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.6.0..v0.7.0) - 2025-09-21
 
 ### 🚀 Features
@@ -16,7 +25,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- *(release)* Release v0.7.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v0.7.0 - ([d5c244b](https://github.com/kristof-mattei/km-crates-publish-test/commit/d5c244b006c5c29fbc92655bad8b96e1f5d7ef1b))
 ## [0.6.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.5.0..v0.6.0) - 2025-09-21
 
 ### 🚀 Features
