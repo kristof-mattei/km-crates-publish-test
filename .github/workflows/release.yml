@@ -112,14 +112,9 @@ jobs:
           version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
-          git tag $version
+          git tag $version --message "chore(version): Release ${version}
 
-          git-cliff --output CHANGELOG.md --github-token ${{ secrets.GITHUB_TOKEN }}
           git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
-
-          git add CHANGELOG.md
-
-          git commit --message "chore: Release $version"
 
           git push --follow-tags
 
@@ -129,3 +124,15 @@ jobs:
           body_path: diff-CHANGELOG.md
           tag_name: ${{ steps.release.outputs.version }}
           token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
+
+      - name: Update changelog
+        shell: bash
+        run: |
+          git-cliff --output CHANGELOG.md --github-token ${{ secrets.GITHUB_TOKEN }}
+
+          git add CHANGELOG.md
+
+          git commit --message "chore(version): Update changelog for ${{ steps.release.outputs.version }}"
+
+          git push
+
