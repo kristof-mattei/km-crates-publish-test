@@ -1,4 +1,13 @@
 <!-- header goes here -->
+## [0.6.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.5.0..v0.6.0) - 2025-09-21
+
+### 🚀 Features
+
+- Add self-referencing commit everywhere - ([38db03d](https://github.com/kristof-mattei/km-crates-publish-test/commit/38db03d4da46367a798eec9560daacf58940c256))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(release)* Release v0.6.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
 ## [0.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.4.0..v0.5.0) - 2025-09-21
 
 ### 🚀 Features
@@ -16,7 +25,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- *(release)* Release v0.5.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v0.5.0 - ([35cde3b](https://github.com/kristof-mattei/km-crates-publish-test/commit/35cde3b995b77a82f1b57e62164deeb0183081e5))
 ## [0.4.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.3.0..v0.4.0) - 2025-09-21
 
 ### 🚀 Features
