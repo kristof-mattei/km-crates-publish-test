@@ -123,10 +123,6 @@ jobs:
 
           git push --follow-tags
 
-      - name: Get changelog for v-last to v-current
-        shell: bash
-        run: |
-          git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload github release
         uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
