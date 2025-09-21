@@ -112,26 +112,22 @@ jobs:
           version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
-          git tag $version --message "chore(version): Release ${version}"
+          commit_message="chore(release): Release ${version}"
+
+          git-cliff --output diff-CHANGELOG.md --current --with-commit "${commit_message}" --github-token ${{ secrets.GITHUB_TOKEN }}
+
+          git add CHANGELOG.md
+
+          git commit --message "${commit_message}"
+
+          git tag $version --message ${commit_message}
 
           git push --follow-tags
 
           git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
-
       - name: Upload github release
         uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
         with:
           body_path: diff-CHANGELOG.md
           tag_name: ${{ steps.release.outputs.version }}
           token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
-
-      - name: Update changelog
-        shell: bash
-        run: |
-          git-cliff --output CHANGELOG.md --github-token ${{ secrets.GITHUB_TOKEN }}
-
-          git add CHANGELOG.md
-
-          git commit --message "chore(version): Publish changelog for ${{ steps.release.outputs.version }}"
-
-          git push
