@@ -109,7 +109,7 @@ jobs:
           git config --global user.name ${application_name}-release[bot]
           git config --global user.email 864376+${application_name}-release[bot]@users.noreply.github.com
 
-          version=$(git-cliff --bumped-version --github-token ${{ secrets.GITHUB_TOKEN }})
+          version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
           git-cliff --output CHANGELOG.md --bump --unreleased --github-token ${{ secrets.GITHUB_TOKEN }}
