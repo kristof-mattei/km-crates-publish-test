@@ -112,7 +112,7 @@ jobs:
           version=$(git-cliff --bumped-version --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
 
-          git-cliff --output CHANGELOG.md --bump --github-token ${{ secrets.GITHUB_TOKEN }}
+          git-cliff --output CHANGELOG.md --bump --unreleased --github-token ${{ secrets.GITHUB_TOKEN }}
 
           git add CHANGELOG.md
 
