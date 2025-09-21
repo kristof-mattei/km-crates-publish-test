@@ -114,7 +114,7 @@ jobs:
 
           git tag $version
 
-          git-cliff --output CHANGELOG.md --bump --github-token ${{ secrets.GITHUB_TOKEN }}
+          git-cliff --output CHANGELOG.md --github-token ${{ secrets.GITHUB_TOKEN }}
           git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
           git add CHANGELOG.md
