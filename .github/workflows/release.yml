@@ -106,19 +106,19 @@ jobs:
           # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
           repository=${repository##*/}
 
-          git config --global user.name ${application_name}-release[bot]
-          git config --global user.email 864376+${application_name}-release[bot]@users.noreply.github.com
+          git config --global user.name ${repository}-release[bot]
+          git config --global user.email 864376+${repository}-release[bot]@users.noreply.github.com
 
           version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
           echo "version=$version" >> ${GITHUB_OUTPUT}
+
+          git tag $version
 
           git-cliff --output CHANGELOG.md --bump --github-token ${{ secrets.GITHUB_TOKEN }}
 
           git add CHANGELOG.md
 
           git commit --message "chore: Release $version"
-
-          git tag $version
 
           git push --follow-tags
 
