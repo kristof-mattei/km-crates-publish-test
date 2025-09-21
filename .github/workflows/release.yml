@@ -98,7 +98,7 @@ jobs:
         run: |
           cargo binstall --github-token ${{ secrets.GITHUB_TOKEN }} --no-confirm git-cliff
 
-      - name: Bump
+      - name: Get new version, generated updated changelog and update repo with updated changelog
         shell: bash
         id: release
         run: |
@@ -114,16 +114,18 @@ jobs:
 
           git-cliff --output CHANGELOG.md --bump --github-token ${{ secrets.GITHUB_TOKEN }}
 
-          # for the release only
-          git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
-
           git add CHANGELOG.md
 
-          git commit --message "chore: $version"
+          git commit --message "chore: Release $version"
 
           git tag $version
 
           git push --tags
+
+      - name: Get changelog for v-last to v-current
+        shell: bash
+        run: |
+          git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload github release
         uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
