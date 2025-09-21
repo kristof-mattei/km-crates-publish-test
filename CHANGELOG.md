@@ -1,4 +1,22 @@
 <!-- header goes here -->
+## [0.7.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.6.0..v0.7.0) - 2025-09-21
+
+### 🚀 Features
+
+- This is a feat 1 - ([26b0efd](https://github.com/kristof-mattei/km-crates-publish-test/commit/26b0efd8caf2250496c2b8805726434ef1d082d0))
+- This is a feat 2 - ([53ca897](https://github.com/kristof-mattei/km-crates-publish-test/commit/53ca8973cbe8abb478beb778d0a2bcb7186f118a))
+- This is a feat 3 - ([ab90b64](https://github.com/kristof-mattei/km-crates-publish-test/commit/ab90b645abd1bf8c17b7d7972218382ca2bc5a99))
+- This is a feat 4 - ([3fb3fe7](https://github.com/kristof-mattei/km-crates-publish-test/commit/3fb3fe7905db7d7123fee109b4928b3392f37576))
+- This is a feat 5 - ([d407bab](https://github.com/kristof-mattei/km-crates-publish-test/commit/d407bab3c9556bb6ad6c89c15812cfc990114a06))
+- This is a feat 6 - ([ff2bc4e](https://github.com/kristof-mattei/km-crates-publish-test/commit/ff2bc4e468fee3488ff7cb432b2c5099db038ea6))
+- This is a feat 7 - ([d69eb64](https://github.com/kristof-mattei/km-crates-publish-test/commit/d69eb641ed3505258c57945410133b74869aa1ec))
+- This is a feat 8 - ([629045f](https://github.com/kristof-mattei/km-crates-publish-test/commit/629045fc96670a9776d20b006577edc368ddb4ca))
+- This is a feat 9 - ([26a480b](https://github.com/kristof-mattei/km-crates-publish-test/commit/26a480bf8813e1454a1afbf048389a6276827df4))
+- This is a feat 10 - ([3b861db](https://github.com/kristof-mattei/km-crates-publish-test/commit/3b861dbd7e7b444816d9d8dc62fca35665c591f6))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(release)* Release v0.7.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
 ## [0.6.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.5.0..v0.6.0) - 2025-09-21
 
 ### 🚀 Features
@@ -7,7 +25,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- *(release)* Release v0.6.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v0.6.0 - ([b66461d](https://github.com/kristof-mattei/km-crates-publish-test/commit/b66461d1382f6af93232791eebbd899f6a171286))
 ## [0.5.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v0.4.0..v0.5.0) - 2025-09-21
 
 ### 🚀 Features
