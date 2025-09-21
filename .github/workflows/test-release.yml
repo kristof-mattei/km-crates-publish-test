@@ -106,4 +106,5 @@ jobs:
 
           git-cliff --output diff-CHANGELOG.md --bump --unreleased --latest --github-token ${{ secrets.GITHUB_TOKEN }}
 
+          echo "# Next release changelog:" >> ${GITHUB_STEP_SUMMARY}
           cat diff-CHANGELOG.md >> ${GITHUB_STEP_SUMMARY}
