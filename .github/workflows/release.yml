@@ -138,4 +138,5 @@ jobs:
         with:
           body_path: diff-CHANGELOG.md
           tag_name: ${{ steps.release.outputs.version }}
+          prerelease: true
           token: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
