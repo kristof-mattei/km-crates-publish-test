@@ -101,6 +101,8 @@ jobs:
       - name: Get new version, generated updated changelog and update repo with updated changelog
         shell: bash
         id: release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           repository=${{ github.repository }}
           # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
@@ -124,6 +126,7 @@ jobs:
 
           git tag $version --message "${commit_message}"
 
+          git push origin :release/${version}
           git push --follow-tags --set-upstream origin HEAD
 
           gh pr create --fill --draft
