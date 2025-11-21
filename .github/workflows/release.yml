@@ -102,7 +102,7 @@ jobs:
         shell: bash
         id: release
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
         run: |
           repository=${{ github.repository }}
           # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
