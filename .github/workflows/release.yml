@@ -126,7 +126,7 @@ jobs:
 
           git tag $version --message "${commit_message}"
 
-          git push origin :release/${version}
+          git push origin :release/${version} || true
           git push --follow-tags --set-upstream origin HEAD
 
           gh pr create --fill --draft
