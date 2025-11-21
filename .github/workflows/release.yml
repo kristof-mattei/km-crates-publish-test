@@ -114,6 +114,8 @@ jobs:
 
           commit_message="chore(release): Release ${version}"
 
+          git checkout -b release/${version}
+
           git-cliff --output CHANGELOG.md --bump --with-commit "${commit_message}" --github-token ${{ secrets.GITHUB_TOKEN }}
 
           git add CHANGELOG.md
@@ -122,7 +124,9 @@ jobs:
 
           git tag $version --message "${commit_message}"
 
-          git push --follow-tags
+          git push --follow-tags --set-upstream origin HEAD
+
+          gh pr create --fill --draft
 
           git-cliff --output diff-CHANGELOG.md --current --github-token ${{ secrets.GITHUB_TOKEN }}
 
