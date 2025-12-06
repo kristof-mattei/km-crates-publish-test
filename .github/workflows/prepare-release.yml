@@ -111,12 +111,14 @@ jobs:
           git config --global user.name ${repository}-release[bot]
           git config --global user.email 864376+${repository}-release[bot]@users.noreply.github.com
 
-          version=$(git-cliff --bumped-version --unreleased --github-token ${{ secrets.GITHUB_TOKEN }})
-          echo "version=$version" >> ${GITHUB_OUTPUT}
+          suffix=-$(date +%s)
+
+          version=$(git-cliff --bumped-version --unreleased --use-branch-tags --github-token ${{ secrets.GITHUB_TOKEN }})
+          echo "version=${version}-${suffix}" >> ${GITHUB_OUTPUT}
 
           commit_message="chore(release): Release ${version}"
 
-          git checkout -b release/${version}
+          git checkout -b release/${version}-${suffix}
 
           git-cliff --output CHANGELOG.md --bump --with-commit "${commit_message}" --github-token ${{ secrets.GITHUB_TOKEN }}
 
@@ -126,7 +128,7 @@ jobs:
 
           git tag $version --message "${commit_message}"
 
-          git push origin :release/${version} || true
+          git push origin :release/${version}-${suffix} || true
           git push --follow-tags --set-upstream origin HEAD
 
           gh pr create --fill --draft
