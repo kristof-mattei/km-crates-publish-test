@@ -111,14 +111,14 @@ jobs:
           git config --global user.name ${repository}-release[bot]
           git config --global user.email 864376+${repository}-release[bot]@users.noreply.github.com
 
-          suffix=-$(date +%s)
-
           version=$(git-cliff --bumped-version --unreleased --use-branch-tags --github-token ${{ secrets.GITHUB_TOKEN }})
-          echo "version=${version}-${suffix}" >> ${GITHUB_OUTPUT}
+          echo "version=${version}" >> ${GITHUB_OUTPUT}
 
           commit_message="chore(release): Release ${version}"
 
-          git checkout -b release/${version}-${suffix}
+          # delete any old draft branch & PR for this version
+          git push origin :release/${version}
+          git checkout -b release/${version}
 
           git-cliff --output CHANGELOG.md --bump --with-commit "${commit_message}" --github-token ${{ secrets.GITHUB_TOKEN }}
 
