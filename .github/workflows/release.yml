@@ -42,6 +42,7 @@ jobs:
         shell: bash
 
       - name: Dump all context
+        shell: bash
         if: ${{ inputs.context == 'all' }}
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -71,7 +72,7 @@ jobs:
 
           echo -e "\033[33;1;4mDump strategy context\033[0m"
           echo -e "$STRATEGY_CONTEXT\n"
-        shell: bash
+
       - name: Upload github release
         uses: softprops/action-gh-release@a06a81a03ee405af7f2048a818ed3f03bbf83c7b # v2.5.0
         with:
