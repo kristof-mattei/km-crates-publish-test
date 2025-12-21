@@ -22,6 +22,11 @@ pub fn something(input: i32) -> Option<i32> {
     input.checked_mul(input)
 }
 
+#[must_use]
+pub fn something2(input: i32) -> Option<i32> {
+    input.checked_mul(input)
+}
+
 #[cfg(test)]
 mod tests {
     use crate::{reverse, to_bytes};
