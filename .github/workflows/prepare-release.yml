@@ -104,7 +104,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
         run: |
-
           set -x
 
           repository=${{ github.repository }}
@@ -131,7 +130,7 @@ jobs:
 
           git tag $version --message "${commit_message}"
 
-          git push origin :release/${version}-${suffix} || true
+          git push origin :release/${version} || true
           git push --follow-tags --set-upstream origin HEAD
 
           gh pr create --fill --draft
