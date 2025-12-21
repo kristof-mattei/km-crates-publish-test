@@ -1,4 +1,13 @@
 <!-- header goes here -->
+## [1.93.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.92.0..v1.93.0) - 2025-12-21
+
+### 🚀 Features
+
+- Something else II - ([516dbd6](https://github.com/kristof-mattei/km-crates-publish-test/commit/516dbd67176a34743a845c0e7369d4367e594b0d))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(release)* Release v1.93.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
 ## [1.92.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.91.0..v1.92.0) - 2025-12-21
 
 ### 🚀 Features
@@ -65,7 +74,7 @@
 - *(ci)* Kill enforcement of nightly fmt - ([ba7dfda](https://github.com/kristof-mattei/km-crates-publish-test/commit/ba7dfdaedabe7840657c288075ee4796fd31faf4))
 - *(fmt)* Fmt - ([f7b0a11](https://github.com/kristof-mattei/km-crates-publish-test/commit/f7b0a1189c2e2b834199e2fc876b95aa63c8a246))
 - *(release)* Release 0.0.1 - ([a075d2d](https://github.com/kristof-mattei/km-crates-publish-test/commit/a075d2d69cd0202de3d42c8a888ca14b49e0051f))
-- *(release)* Release v1.92.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v1.92.0 - ([250c4e0](https://github.com/kristof-mattei/km-crates-publish-test/commit/250c4e06909e566bdeac77c8a3af747bf7d87bce))
 - Use slim-trixie instead of trixie - ([ecd2b0e](https://github.com/kristof-mattei/km-crates-publish-test/commit/ecd2b0e978c392b1ed12726877de4e78f19980e7))
 - Cleanup - ([fb181c3](https://github.com/kristof-mattei/km-crates-publish-test/commit/fb181c3e899c70d21a4d0081ebf2ddf44192012e))
 - Don't show progress - ([e08f1a3](https://github.com/kristof-mattei/km-crates-publish-test/commit/e08f1a3f42403d0c564f2672cffea0c22709897a))
