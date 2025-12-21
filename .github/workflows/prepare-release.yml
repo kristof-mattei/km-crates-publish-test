@@ -104,6 +104,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.TOKEN_TO_TRIGGER_SUBSEQUENT_WORKFLOWS }}
         run: |
+
+          set -x
+
           repository=${{ github.repository }}
           # split at the last / and keep that (kristof-mattei/repo-name -> repo-name)
           repository=${repository##*/}
@@ -118,7 +121,7 @@ jobs:
 
           # delete any old draft branch & PR for this version
           git push origin :release/${version}
-          git checkout -b release/${version}
+          git switch --create release/${version}
 
           git-cliff --output CHANGELOG.md --bump --with-commit "${commit_message}" --github-token ${{ secrets.GITHUB_TOKEN }}
 
