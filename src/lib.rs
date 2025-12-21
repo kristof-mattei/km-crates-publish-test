@@ -17,6 +17,11 @@ pub fn to_bytes(input: Cow<'_, str>) -> Vec<u8> {
     input.into_owned().into_bytes()
 }
 
+#[must_use]
+pub fn something(input: i32) -> Option<i32> {
+    input.checked_mul(input)
+}
+
 #[cfg(test)]
 mod tests {
     use crate::{reverse, to_bytes};
