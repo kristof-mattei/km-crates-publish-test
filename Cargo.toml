@@ -11,6 +11,9 @@ keywords = ["test", "crate", "publish"]
 repository = "https://github.com/kristof-mattei/km-crates-publish-test"
 include = ["src/**", "/LICENSE", "/LICENSE-*"]
 
+[package.metadata.spellcheck]
+config = "spellcheck.toml"
+
 [lints.clippy]
 # don't stop from compiling / running
 all = "warn"
