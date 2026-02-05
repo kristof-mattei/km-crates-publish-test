@@ -29,6 +29,8 @@ pub fn something2(input: i32) -> Option<i32> {
 
 #[cfg(test)]
 mod tests {
+    use pretty_assertions::assert_eq;
+
     use crate::{reverse, to_bytes};
 
     #[test]
