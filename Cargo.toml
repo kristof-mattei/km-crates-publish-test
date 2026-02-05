@@ -11,6 +11,11 @@ keywords = ["test", "crate", "publish"]
 repository = "https://github.com/kristof-mattei/km-crates-publish-test"
 include = ["src/**", "/LICENSE", "/LICENSE-*"]
 
+[dependencies]
+
+[dev-dependencies]
+pretty_assertions = "1.4.1"
+
 [package.metadata.spellcheck]
 config = "spellcheck.toml"
 
@@ -142,8 +147,8 @@ precedence_bits = { level = "deny", priority = 127 }
 # print_stderr = { level = "deny", priority = 127 }
 # Debatable
 # print_stdout = { level = "deny", priority = 127 }
-# Disable in libs
-pub_use = { level = "deny", priority = 127 }
+# Disabled in libs
+# pub_use = { level = "deny", priority = 127 }
 # No, we want the shorthand
 # pub_with_shorthand = { level = "deny", priority = 127 }
 pub_without_shorthand = { level = "deny", priority = 127 }
