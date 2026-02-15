@@ -1,5 +1,10 @@
 <!-- header goes here -->
-## [2.0.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.93.0..v2.0.0) - 2026-02-15
+## [2.0.0-rc.2](https://github.com/kristof-mattei/km-crates-publish-test/compare/v2.0.0-rc.1..v2.0.0-rc.2) - 2026-02-15
+
+### ⚙️ Miscellaneous Tasks
+
+- *(release)* Release v2.0.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+## [2.0.0-rc.1](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.93.0..v2.0.0-rc.1) - 2026-02-15
 
 ### 🚀 Features
 
@@ -51,7 +56,7 @@
 ### ⚙️ Miscellaneous Tasks
 
 - *(ci)* Make coverage optional - ([3400180](https://github.com/kristof-mattei/km-crates-publish-test/commit/34001803940dedc56564b839d4abf55ab6d94299))
-- *(release)* Release v2.0.0-rc.1 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v2.0.0-rc.1 - ([9c2cda8](https://github.com/kristof-mattei/km-crates-publish-test/commit/9c2cda874c9cf4ecb2ef2c5244677941fc36de34))
 - Remove debug line - ([6a52ed9](https://github.com/kristof-mattei/km-crates-publish-test/commit/6a52ed9a45931dd5e4f7b8222607cdcdd2a20596))
 ## [1.93.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.92.0..v1.93.0) - 2025-12-21
 
