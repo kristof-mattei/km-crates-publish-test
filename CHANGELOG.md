@@ -1,4 +1,58 @@
 <!-- header goes here -->
+## [2.0.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.93.0..v2.0.0) - 2026-02-15
+
+### 🚀 Features
+
+- Add spell-checking - ([aafed8a](https://github.com/kristof-mattei/km-crates-publish-test/commit/aafed8a7e54b88066c1c5feb66b2b003873ecd1c))
+- Clippy 1.93 lints - ([f13cef9](https://github.com/kristof-mattei/km-crates-publish-test/commit/f13cef988195cc51a3fc02715bca40f5a117cdf1))
+- Move to crates - ([51ff0f0](https://github.com/kristof-mattei/km-crates-publish-test/commit/51ff0f0005f659b594dca4a7e007e7b11e00dc9a))
+- Modernize build - ([80a409e](https://github.com/kristof-mattei/km-crates-publish-test/commit/80a409e515740565941b92c6694d7ef4470f6ba9))
+- Use `CARGO_TARGET_DIR` to separate caches - ([d6a7766](https://github.com/kristof-mattei/km-crates-publish-test/commit/d6a776643631728c2ca8e02fd87eaf46328f6d45))
+- Use PRs to control releases - ([303a965](https://github.com/kristof-mattei/km-crates-publish-test/commit/303a96520838f1c0178fe5408b6f16d8fe5c4104))
+
+### 🐛 Bug Fixes
+
+- Make spellcheck mandatory - ([1eae461](https://github.com/kristof-mattei/km-crates-publish-test/commit/1eae4611b34bcf58630fbe8457e9ebc1cee26e0f))
+- More " - ([e9630d4](https://github.com/kristof-mattei/km-crates-publish-test/commit/e9630d4e66b7212a52ce156218ac06ca56b2f85d))
+- Simplify installs - ([9444a11](https://github.com/kristof-mattei/km-crates-publish-test/commit/9444a1152476575d51e514c3166da394c4fd30ef))
+- Update dictionary terms - ([59ede23](https://github.com/kristof-mattei/km-crates-publish-test/commit/59ede237c421afd94836a6befc7c6533f4600769))
+- Make spellcheck mandatory - ([c88f4d1](https://github.com/kristof-mattei/km-crates-publish-test/commit/c88f4d121ed0d18202dcafaa5c06b23e92d250b0))
+- Use slim - ([d592167](https://github.com/kristof-mattei/km-crates-publish-test/commit/d5921679e2109283e49fb99be46c0ebd21013f66))
+- Use apt-get instaed of apt, as we're not supposed to use apt in scripts - ([4e73341](https://github.com/kristof-mattei/km-crates-publish-test/commit/4e73341deee8d0e1f7134b2fbcba1c2075b011fd))
+- Copying a directory copies the contents into the destination, so we have to repeat the name, meaning we cannot mix it with files - ([4e5cf88](https://github.com/kristof-mattei/km-crates-publish-test/commit/4e5cf882676b9d2382754fa70f4e081d64d992a2))
+- Add . - ([bfa3e2b](https://github.com/kristof-mattei/km-crates-publish-test/commit/bfa3e2b4fedd8868d07a67c99fd918af43bec31e))
+- Don't wait for codecov, it sometimes blocks - ([62f2501](https://github.com/kristof-mattei/km-crates-publish-test/commit/62f250176d914b20cc8ddc1f9ac45dd1835b48f3))
+- `TARGETARCH` is already the arch, the `//\//-` was for `TARGETPLATFORM` - ([3b8ca47](https://github.com/kristof-mattei/km-crates-publish-test/commit/3b8ca4789fa67ba8503dd0837f48378be974d3c9))
+- Reorganize crates - ([db451c3](https://github.com/kristof-mattei/km-crates-publish-test/commit/db451c334731fa8931f104bf4baad02643a27519))
+- Quotes for safety - ([f623589](https://github.com/kristof-mattei/km-crates-publish-test/commit/f62358982e5c848e077d9527bc9a12390d3523e5))
+- Version casing - ([ea0d1c8](https://github.com/kristof-mattei/km-crates-publish-test/commit/ea0d1c8bf7171c98e68aeeb5311e3c0cd3973fc7))
+- Spellcheck builds from source, so cache cargo - ([0d5f4da](https://github.com/kristof-mattei/km-crates-publish-test/commit/0d5f4da8842d65c1d3f93d02f9fc9955b43f6893))
+- Be explicit about copying as a file - ([fbf153f](https://github.com/kristof-mattei/km-crates-publish-test/commit/fbf153fa9467a304906144d0c8e7e9bf05b5c3b0))
+- Missing mold - ([24d2d64](https://github.com/kristof-mattei/km-crates-publish-test/commit/24d2d64bacda3238c932f1d080504ea2785cb4a8))
+- Generically touch files - ([087abda](https://github.com/kristof-mattei/km-crates-publish-test/commit/087abdaad3bd02f274f25c6b7a9b417b93fafd71))
+- Don't hang should there be a question - ([61daade](https://github.com/kristof-mattei/km-crates-publish-test/commit/61daade12a64cdfd76ff4455a70e85be94204ef1))
+- Fix touch not relying on /bin/bash - ([ca5f315](https://github.com/kristof-mattei/km-crates-publish-test/commit/ca5f3154fa175d6f179cb60d7c225db0a0014925))
+- Success cannot be cancelled - ([ff32f1f](https://github.com/kristof-mattei/km-crates-publish-test/commit/ff32f1f2a5249a9fd1fa9f4c99d8edef8127f737))
+- Re-enable container cleanup - ([3681a0b](https://github.com/kristof-mattei/km-crates-publish-test/commit/3681a0bca2c2ad0057c77917856e91c1ade74587))
+- Use frozen - ([b83181e](https://github.com/kristof-mattei/km-crates-publish-test/commit/b83181e3a58ca79f8ffd24d1de3361d4325b27e9))
+- Quotes & reorder - ([4d3399d](https://github.com/kristof-mattei/km-crates-publish-test/commit/4d3399dfbaec8bcf300acca43fdd72e9ad27dbd8))
+- Name - ([dc479a1](https://github.com/kristof-mattei/km-crates-publish-test/commit/dc479a1ba61a84416c7e6c31c6ff297b474c9f68))
+- Copy into cache - ([3de174a](https://github.com/kristof-mattei/km-crates-publish-test/commit/3de174a45d3275b82def24db1eecc8d2d36ac52a))
+- The subsequent rust builds need to come from the warmed up cache, and nothing else - ([2236525](https://github.com/kristof-mattei/km-crates-publish-test/commit/2236525cd347dfd60455884374e0781256aab014))
+- More caches - ([df84e19](https://github.com/kristof-mattei/km-crates-publish-test/commit/df84e1901142303569f4360152934c207ea90bfc))
+- Ensure the build fails when the detect changes task fails - ([6a6d4c9](https://github.com/kristof-mattei/km-crates-publish-test/commit/6a6d4c959d983c819c2d75037b57e70da3ac6c7f))
+- Also depend on calculate-version - ([1e633b6](https://github.com/kristof-mattei/km-crates-publish-test/commit/1e633b6795d6f4f5ce99d6de5c146151ddaf9d63))
+- Add `env_vars`, set name - ([712dfd2](https://github.com/kristof-mattei/km-crates-publish-test/commit/712dfd2bbc1b0d0c9ffd613a6a9174e05b590c46))
+- Disable flags when not needed - ([6d2faf0](https://github.com/kristof-mattei/km-crates-publish-test/commit/6d2faf0a5ce7dddc927dcf37d26b1935e6e8e297))
+- Formatting - ([62ee9cf](https://github.com/kristof-mattei/km-crates-publish-test/commit/62ee9cf47b5b4754efa0bf6b6fca92c0e6b5ca9f))
+- Remove semgrep, it's useless - ([ab83edc](https://github.com/kristof-mattei/km-crates-publish-test/commit/ab83edcd3f5b0ed0aaa87a74c863ca4f45bfb2cc))
+- Prevent injection - ([a949881](https://github.com/kristof-mattei/km-crates-publish-test/commit/a949881fec55d29511257b981af77cb2c7bb2b4a))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(ci)* Make coverage optional - ([3400180](https://github.com/kristof-mattei/km-crates-publish-test/commit/34001803940dedc56564b839d4abf55ab6d94299))
+- *(release)* Release v2.0.0-rc.1 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- Remove debug line - ([6a52ed9](https://github.com/kristof-mattei/km-crates-publish-test/commit/6a52ed9a45931dd5e4f7b8222607cdcdd2a20596))
 ## [1.93.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.92.0..v1.93.0) - 2025-12-21
 
 ### 🚀 Features
@@ -7,7 +61,7 @@
 
 ### ⚙️ Miscellaneous Tasks
 
-- *(release)* Release v1.93.0 - ([](https://github.com/kristof-mattei/km-crates-publish-test/commit/))
+- *(release)* Release v1.93.0 - ([a8cf8ae](https://github.com/kristof-mattei/km-crates-publish-test/commit/a8cf8ae1440e6ee1838ca8fa154e67282bb947d1))
 ## [1.92.0](https://github.com/kristof-mattei/km-crates-publish-test/compare/v1.91.0..v1.92.0) - 2025-12-21
 
 ### 🚀 Features
