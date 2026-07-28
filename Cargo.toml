@@ -16,6 +16,10 @@ include = ["src/**", "/LICENSE", "/LICENSE-*"]
 [dev-dependencies]
 pretty_assertions = "=1.4.1"
 
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
 [lints.clippy]
 # don't stop from compiling / running
 all = "warn"
