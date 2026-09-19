@@ -20,6 +20,7 @@ kristof
 lintian
 mattei
 monomorphization
+msvc
 multiplatform
 nextest
 oras
